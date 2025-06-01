@@ -3,35 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Nayef's Cafe</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      color: #333;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #3e2a1c;
     }
-    h1 {
-      color: #5c6bc0;
+    nav {
+      background-color: #5e412f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
     }
-    a {
-      color: #5c6bc0;
+    nav .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
       text-decoration: none;
-      margin: 0 10px;
+      font-weight: 500;
     }
-    a:hover {
-      text-decoration: underline;
+    nav ul li a:hover {
+      border-bottom: 2px solid #f6aa1c;
+    }
+    header.hero {
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header.hero h1 {
+      font-size: 3rem;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .menu {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .menu h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .menu-category {
+      margin-bottom: 2rem;
+    }
+    .menu-category h3 {
+      border-bottom: 2px solid #f6aa1c;
+      padding-bottom: 0.5rem;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+    }
+    .about, .contact {
+      background: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .footer {
+      text-align: center;
+      background-color: #5e412f;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm [Your Name]!</h1>
-  <p>Welcome to my personal website.</p>
-  <p>I'm passionate about coding, technology, and building cool things on the web.</p>
-  <p>
-    <a href="https://github.com/YOURUSERNAME" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank">LinkedIn</a>
-  </p>
+  <nav>
+    <div class="logo">Nayef's Cafe</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <h1>Welcome to Nayef's Cafe</h1>
+    <p>Craft Coffee • Fresh Bakes • Cozy Vibes</p>
+  </header>
+
+  <section class="section menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-category">
+      <h3>Coffee</h3>
+      <div class="menu-item"><span>Espresso</span><span>$2.50</span></div>
+      <div class="menu-item"><span>Cappuccino</span><span>$3.00</span></div>
+      <div class="menu-item"><span>Latte</span><span>$3.50</span></div>
+      <div class="menu-item"><span>Americano</span><span>$2.75</span></div>
+    </div>
+    <div class="menu-category">
+      <h3>Pastries</h3>
+      <div class="menu-item"><span>Croissant</span><span>$2.00</span></div>
+      <div class="menu-item"><span>Chocolate Muffin</span><span>$2.25</span></div>
+      <div class="menu-item"><span>Cheesecake</span><span>$3.00</span></div>
+    </div>
+    <div class="menu-category">
+      <h3>Sandwiches</h3>
+      <div class="menu-item"><span>Turkey & Cheese</span><span>$4.00</span></div>
+      <div class="menu-item"><span>Veggie Delight</span><span>$3.75</span></div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>Nayef's Cafe was founded in 2020 with a passion for high-quality coffee, fresh food, and a relaxing space for everyone. Our beans are sourced from trusted roasters and brewed to perfection. Whether you're here to work, relax, or meet friends — you're always welcome.</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Location:</strong> 123 Coffee Street, Cityville</p>
+    <p><strong>Email:</strong> contact@nayefscafe.com</p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Nayef's Cafe — All rights reserved.
+  </footer>
 </body>
 </html>
